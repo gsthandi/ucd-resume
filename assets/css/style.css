@@ -10,6 +10,10 @@
     background-color: #fff;
 }
 
+.bg-color-personal-info {
+    background-color: #f4f4f4;
+}
+
 .ul-menu-color-home {
     background-color: #e67e22;
 }
@@ -48,12 +52,6 @@ h4 {
 
 .inline-block {
     display: inline-block;
-}
-
-.selection-column {
-    padding: 0 30px 30px;
-    float: none;
-    display: table-cell;
 }
 
 .row-table {
@@ -164,7 +162,7 @@ footer {
 }
 
 footer .cv-pdf i {
-    color: #fafafa;   
+    color: #fafafa;
     text-align: center;
     font-size: 18px;
     padding-left: 5px;
@@ -192,7 +190,7 @@ footer .cv-pdf i:hover {
     text-align: center;
     color: #fafafa;
     background: #8f8f8f;
-     transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
@@ -217,18 +215,51 @@ footer .cv-pdf i:hover {
     margin-bottom: 15px;
 }
 
+/*---------------------------------------------Personal info section-*/
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+     padding: 8px;   
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+     margin: 0;
+}
+
+.personal-info-item .key {
+    display: inline-block;
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    padding-top: 2px;
+}
 
 
 
+/*---------------------------------------------Media Queries-*/
 
-
-
-
-
-
-
-
-
-
-
-
+@media(min-width: 992px) {
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+}
